@@ -1,0 +1,24 @@
+import os
+from yacs.config import CfgNode as CN
+
+_C = CN()
+
+_C.MODEL = CN()
+_C.MODEL.BASE_MODEL = "model1"
+
+_C.DATASET = CN()
+_C.DATASET.LOAD_WEIGHTS = ""
+_C.DATASET.TRAIN_JSON = ""
+_C.DATASET.VAL_JSON = ""
+_C.DATASET.TEST_JSON = ""
+_C.DATASET.BATCH_SIZE = 4
+_C.DATASET.CLASS_NAMES = []
+
+_C.SOLVER = CN()
+_C.SOLVER.NUM_EPOCHS = 100
+_C.SOLVER.USE_GPU = True
+_C.SOLVER.LR = 1e-4
+_C.SOLVER.OPTIM = 'adamw'
+
+_C.OUTPUT_DIR = os.getcwd()
+_C.TRAIN_VAL_SPLIT_RATE = 0.7

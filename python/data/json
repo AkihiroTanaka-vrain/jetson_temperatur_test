@@ -1,0 +1,1 @@
+{"image_path":"/media/vrain/Drive1/porting/AX720_evaluation_soft/python/data/image/image00000.jpg","labels":[{"name":"heta","threshold":0.0}],"mode":1,"model_path":"/media/vrain/Drive1/porting/AX720_evaluation_soft/python/data/model/heta.pth","server_port":8000,"split_num":1,"use_cuda":1,"use_overlap":false}
